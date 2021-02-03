@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = { "es.capgemini.curso.multimodulo.spring.jpa.servicios", "es.capgemini.curso.multimodulo.spring.jpa.modelo" })
+@ComponentScan(basePackages = { "es.capgemini.curso.multimodulo.spring.jpa"})
 @EnableJpaRepositories(basePackages = { "es.capgemini.curso.multimodulo.spring.jpa.modelo" })
 public class RootConfig {
 
@@ -23,13 +23,6 @@ public class RootConfig {
 	public LocalEntityManagerFactoryBean entityManagerFactory() {
 		LocalEntityManagerFactoryBean factory = new LocalEntityManagerFactoryBean();
 
-		/*
-		 * Cargar la unidad de persistencia del fichero persistence.xml
-		 * 
-		 * jpa-mysql => MySQL
-		 * 
-		 * jpa-h2 => H2
-		 */
 		factory.setPersistenceUnitName("jpa-mysql");
 
 		return factory;

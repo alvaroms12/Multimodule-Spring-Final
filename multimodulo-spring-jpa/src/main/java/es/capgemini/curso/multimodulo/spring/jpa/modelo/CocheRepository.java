@@ -3,14 +3,14 @@ package es.capgemini.curso.multimodulo.spring.jpa.modelo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Candidato;
+import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche;
 
 
 /*
  * Repositorio del modelo
  */
 @Repository
-public interface CandidatoRepository extends JpaRepository<Candidato, Integer> {
+public interface CocheRepository extends JpaRepository<Coche, Integer> {
 
 	
 }

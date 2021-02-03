@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	
+	<!-- Unidad de persistencia para MySQL -->
+	<persistence-unit name="jpa-mysql" transaction-type="RESOURCE_LOCAL">
+		<!-- Proveedor persistencia JPA (ORM) -->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<!-- Entidades gestionadas en la aplicacion -->
+		<class>es.capgemini.curso.springmvcjpa.modelo.entidades.Candidato</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/capgemini?serverTimezone=UTC" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="121298A.m.s." />
+            
+            <!-- SQL para MySQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<!-- Mostrar sentencias SQL en la consola del servidor de aplicaciones -->
+            <property name="hibernate.show_sql" value="true" />
+            <!-- No hacer nada con las tablas asociadas a las entidades -->
+            <property name="hibernate.hbm2ddl.auto" value="none" />
+		</properties>
+	</persistence-unit>
+</persistence>
