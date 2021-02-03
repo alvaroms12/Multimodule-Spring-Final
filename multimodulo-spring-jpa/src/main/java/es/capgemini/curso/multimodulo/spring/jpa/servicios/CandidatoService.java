@@ -1,4 +1,4 @@
-package es.capgemini.curso.springmvcjpa.servicios;
+package es.capgemini.curso.multimodulo.spring.jpa.servicios;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package es.capgemini.curso.springmvcjpa.modelo;
+package es.capgemini.curso.multimodulo.spring.jpa.modelo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
