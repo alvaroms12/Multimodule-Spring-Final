@@ -11,7 +11,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<!-- Entidades gestionadas en la aplicacion -->
-		<class>es.capgemini.curso.springmvcjpa.modelo.entidades.Candidato</class>
+		<class>es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />

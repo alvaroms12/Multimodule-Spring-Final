@@ -2,7 +2,6 @@ package es.capgemini.curso.multimodulo.spring.jpa;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-
 import es.capgemini.curso.multimodulo.spring.jpa.config.RootConfig;
 import es.capgemini.curso.multimodulo.spring.jpa.modelo.CocheRepository;
 import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche;
