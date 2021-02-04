@@ -1,5 +1,7 @@
 package es.capgemini.curso.multimodulo.spring.jpa;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import es.capgemini.curso.multimodulo.spring.jpa.config.RootConfig;
@@ -14,9 +16,12 @@ public class App {
 		// Recuperar instancia del repositorio
 		CocheRepository repository = context.getBean(CocheRepository.class);
 
-		Coche coche1 = repository.getOne(1);
+		List<Coche> coche1 = repository.findAll();
 
-		System.out.println(coche1);
+		for (int i = 0; i < coche1.size(); i++) {
+			System.out.println("Id: " + coche1.get(i).getIdcoche() + " Modelo: " + coche1.get(i).getModelo() + " Marca: " + coche1.get(i).getMarca());
+			
+		}
 
 
 		// Cerrar y liberar contexto
