@@ -1,6 +1,2 @@
 es\capgemini\curso\multimodulo\spring\jpa\App.class
 es\capgemini\curso\multimodulo\spring\jpa\config\RootConfig.class
-es\capgemini\curso\multimodulo\spring\jpa\servicios\CocheServiceImpl.class
-es\capgemini\curso\multimodulo\spring\jpa\modelo\CocheRepository.class
-es\capgemini\curso\multimodulo\spring\jpa\modelo\entidades\Coche.class
-es\capgemini\curso\multimodulo\spring\jpa\servicios\CocheService.class
