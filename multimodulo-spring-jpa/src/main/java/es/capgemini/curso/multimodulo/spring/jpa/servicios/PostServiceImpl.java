@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import es.capgemini.curso.multimodulo.spring.jpa.modelo.CocheRepository;
-import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche;
+import es.capgemini.curso.multimodulo.spring.jpa.modelo.PostRepository;
+import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Post;
 
 
 
@@ -19,33 +19,33 @@ import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche;
  */
 @Service
 @Transactional
-public class CocheServiceImpl implements CocheService {
+public class PostServiceImpl implements PostService {
 
 	@Autowired
-	private CocheRepository repository;
+	private PostRepository repository;
 
 	@Override
-	public Coche add(Coche coche) {
-		return repository.save(coche);
+	public Post add(Post post) {
+		return repository.save(post);
 	}
 
 	@Override
-	public Coche edit(Coche coche) {
-		return repository.saveAndFlush(coche);
+	public Post edit(Post post) {
+		return repository.saveAndFlush(post);
 	}
 
 	@Override
-	public void remove(Coche coche) {
-		repository.delete(coche);
+	public void remove(Post post) {
+		repository.delete(post);
 	}
 
 	@Override
-	public Optional<Coche> getById(int idcoche) {
-		return repository.findById(idcoche);
+	public Optional<Post> getById(int id) {
+		return repository.findById(id);
 	}
 
 	@Override
-	public List<Coche> getAll() {
+	public List<Post> getAll() {
 		return repository.findAll();
 	}
 	

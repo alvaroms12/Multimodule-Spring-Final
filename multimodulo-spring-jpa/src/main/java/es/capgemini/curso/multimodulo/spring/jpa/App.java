@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import es.capgemini.curso.multimodulo.spring.jpa.config.RootConfig;
-import es.capgemini.curso.multimodulo.spring.jpa.modelo.CocheRepository;
-import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Coche;
+import es.capgemini.curso.multimodulo.spring.jpa.modelo.PostRepository;
+import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Post;
 
 public class App {
 	public static void main(String[] args) {
@@ -14,12 +14,12 @@ public class App {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(RootConfig.class);
 
 		// Recuperar instancia del repositorio
-		CocheRepository repository = context.getBean(CocheRepository.class);
+		PostRepository repository = context.getBean(PostRepository.class);
 
-		List<Coche> coche1 = repository.findAll();
+		List<Post> post = repository.findAll();
 
-		for (int i = 0; i < coche1.size(); i++) {
-			System.out.println("Id: " + coche1.get(i).getIdcoche() + " Modelo: " + coche1.get(i).getModelo() + " Marca: " + coche1.get(i).getMarca());
+		for (int i = 0; i < post.size(); i++) {
+			System.out.println("Id: " + post.get(i).getId() + " Titulo: " + post.get(i).getTitulo() + " Contenido: " + post.get(i).getContenido());
 			
 		}
 
