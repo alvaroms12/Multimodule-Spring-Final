@@ -1,4 +1,4 @@
-package es.capgemini.curso.multimodulo.spring.jpa.servicios;
+package es.capgemini.curso.spring.servicios;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,7 +13,7 @@ public interface PostService {
 
 	Post add(Post post);
 	
-	boolean edit(Post post);
+	Post edit(Post post);
 	
 	void remove(Post post);
 	

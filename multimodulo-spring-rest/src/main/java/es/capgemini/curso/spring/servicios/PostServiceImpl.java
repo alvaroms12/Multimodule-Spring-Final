@@ -1,9 +1,10 @@
-package es.capgemini.curso.multimodulo.spring.jpa.servicios;
+package es.capgemini.curso.spring.servicios;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +20,7 @@ import es.capgemini.curso.multimodulo.spring.jpa.modelo.entidades.Post;
  */
 @Service
 @Transactional
+@ComponentScan(basePackages = { "es.capgemini.curso.multimodulo.spring.jpa.modelo" })
 public class PostServiceImpl implements PostService {
 
 	@Autowired

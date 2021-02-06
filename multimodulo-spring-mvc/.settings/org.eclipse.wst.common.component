@@ -7,7 +7,7 @@
         <dependent-module archiveName="multimodulo-spring-jpa-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/multimodulo-spring-jpa/multimodulo-spring-jpa">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="multimodulo-spring-rest-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/multimodulo-spring-rest/multimodulo-spring-rest">
+        <dependent-module archiveName="multimodulo-spring-rest-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/multimodulo-spring-servicios/multimodulo-spring-servicios">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="gestion-web"/>

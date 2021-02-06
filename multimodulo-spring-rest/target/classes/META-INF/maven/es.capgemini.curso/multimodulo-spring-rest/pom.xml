@@ -19,17 +19,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- Implementación de Jersey (Oracle) para REST -->
-		<dependency>
-			<groupId>org.glassfish.jersey.containers</groupId>
-			<artifactId>jersey-container-servlet</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.inject</groupId>
-			<artifactId>jersey-hk2</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
 
 		<!-- Dependencia proyecto spring JPA -->
 		<dependency>
@@ -38,16 +27,9 @@
 			<version>1.0.0</version>
 		</dependency>
 
-		<!-- Serialización JSON Java mediante Jackson -->
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
-		<finalName>spring-rest</finalName>
+		<finalName>spring-servicios</finalName>
 	</build>
 </project>
