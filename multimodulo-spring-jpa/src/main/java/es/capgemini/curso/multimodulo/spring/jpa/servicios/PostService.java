@@ -13,9 +13,11 @@ public interface PostService {
 
 	Post add(Post post);
 	
-	Post edit(Post post);
+	boolean edit(Post post);
 	
 	void remove(Post post);
+	
+	int count(Post post);
 	
 	Optional<Post> getById(int id);
 	

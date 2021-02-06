@@ -48,5 +48,10 @@ public class PostServiceImpl implements PostService {
 	public List<Post> getAll() {
 		return repository.findAll();
 	}
+
+	@Override
+	public int count(Post post) {
+		return (int) repository.count();
+	}
 	
 }
