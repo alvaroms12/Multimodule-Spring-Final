@@ -31,10 +31,10 @@
 			<version>1.0.0</version>
 		</dependency>
 		
-		<!-- Dependencia del proyecto multimodulo-spring-rest -->
+		<!-- Dependencia del proyecto multimodulo-spring-services -->
 		<dependency>
 			<groupId>es.capgemini.curso</groupId>
-			<artifactId>multimodulo-spring-rest</artifactId>
+			<artifactId>multimodulo-spring-servicios</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 
@@ -68,7 +68,7 @@
 
 	<!-- Construccion App (plugins) -->
 	<build>
-		<finalName>gestion-web</finalName>
+		<finalName>multimodulo-web</finalName>
 		<plugins>
 			<!-- Generador WAR Maven -->
 			<plugin>

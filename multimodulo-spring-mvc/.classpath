@@ -13,7 +13,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -24,6 +23,13 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/amaestre/git/multimodule-final/multimodulo-spring-jpa/target/multimodulo-spring-jpa-1.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/amaestre/git/multimodule-final/multimodulo-spring-rest/target/spring-rest.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amaestre/git/multimodule-final/multimodulo-spring-rest/target/spring-servicios.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

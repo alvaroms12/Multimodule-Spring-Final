@@ -14,10 +14,9 @@ public class SpringInitializer extends AbstractAnnotationConfigDispatcherServlet
 		return new Class<?>[] { ComponentesWeb.class };
 	}
 
-	// El mapeo empezará en esta dirección que es donde tenemos nuestros servicios rest
 	@Override
 	protected String[] getServletMappings() {
-		return new String[] { "/spring-rest/rest/publicaciones" };
+		return new String[] { "/" };
 	}
 
 }

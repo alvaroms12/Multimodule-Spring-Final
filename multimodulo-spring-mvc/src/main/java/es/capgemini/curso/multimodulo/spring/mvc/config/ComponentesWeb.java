@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @EnableWebMvc
 // Apuntamos al proyecto spring rest, ya que hay es donde se van a ejecutar los servicios web
-@ComponentScan(basePackages = {"es.capgemini.curso.multimodulo.spring.rest"})
+@ComponentScan(basePackages = {"es.capgemini.curso.multimodulo.spring.web"})
 public class ComponentesWeb {
 
 	@Bean
