@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>es.capgemini.curso</groupId>
+		<artifactId>proyecto-spring-completo-multimodulo</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>multimodulo-spring-mvc</artifactId>
+	<packaging>war</packaging>
+
+	<!-- Propiedades -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>5.2.8.RELEASE</spring.version>
+		<servlet.version>3.1.0</servlet.version>
+		<jsp.version>2.3.1</jsp.version>
+		<jstl.version>1.2</jstl.version>
+	</properties>
+
+	<!-- Dependencias -->
+	<dependencies>
+
+		<!-- Dependencia del proyecto multimodulo-spring-jpa-->
+		<dependency>
+			<groupId>es.capgemini.curso</groupId>
+			<artifactId>multimodulo-spring-jpa</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<!-- Dependencia del proyecto multimodulo-spring-rest -->
+		<dependency>
+			<groupId>es.capgemini.curso</groupId>
+			<artifactId>multimodulo-spring-rest</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Java Servlet, JSP y JSTL -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>${jsp.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- Construccion App (plugins) -->
+	<build>
+		<finalName>gestion-web</finalName>
+		<plugins>
+			<!-- Generador WAR Maven -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
